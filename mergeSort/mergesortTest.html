@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<h1 style="text-align: center">归并排序1</h1>
+<script src="../sort.js"></script>
+<script src="mergeSort3.js"></script>
+<script>
+    var ms =  new mergesort();
+    var n = 10000;
+    var arr = ms.generateRandomArray(n,0,n)
+    ms.speedTest(ms,arr);
+    console.log(arr);
+</script>
+</body>
+</html>

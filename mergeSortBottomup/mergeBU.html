@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>自底向上归并排序</h1>
+    <script src="../sort.js"></script>
+    <script src="mergeBU.js"></script>
+<script>
+    let mbu = new mergeBU();
+    let n=10000
+    let arr = mbu.generateRandomArray(n,0,n);
+    mbu.speedTest(mbu,arr);
+    console.log(arr);
+</script>
+</body>
+</html>
