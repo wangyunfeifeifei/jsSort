@@ -1,7 +1,5 @@
-//import Sort from '../sort'
-function SelectionSort(){
-
-}
+const Sort = require('../sort')
+function SelectionSort(){}
 
 var F = function(){}
 F.prototype = Sort.prototype;
@@ -19,3 +17,5 @@ SelectionSort.prototype.sort = function(arr){
         this.exch(arr,i,minIndex);
     }
 }
+
+module.exports= SelectionSort;

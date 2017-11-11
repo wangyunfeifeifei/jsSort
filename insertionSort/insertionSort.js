@@ -1,4 +1,4 @@
-//import Sort from '../sort'
+const Sort = require('../sort');
 
 function insertionsort(){
 
@@ -21,3 +21,5 @@ insertionsort.prototype.sort = function(arr){
         arr[index] = e;
     }
 }
+
+module.exports = insertionsort;

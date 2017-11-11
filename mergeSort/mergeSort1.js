@@ -1,4 +1,4 @@
-// import Sort from '../sort'
+const Sort = require('../sort')
 function mergesort(){
 
 }
@@ -41,3 +41,5 @@ function __merge(arr,l,mid,r){
         }
     }
 }
+
+module.exports = mergesort;

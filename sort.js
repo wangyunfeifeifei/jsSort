@@ -9,9 +9,7 @@ Sort.prototype.sort =  function(arr){
 //打印数组
 Sort.prototype.show=function(arr)
 {
-    for(var i=0,n=arr.length;i<n;i++){
-        console.log(arr[i])
-    }
+   console.log(arr);
 }
 //判断a是否小于b
 Sort.prototype.less=function(a,b){
@@ -49,4 +47,4 @@ Sort.prototype.speedTest=function(sortObject,arr){
     console.log("运行时间"+(end-start)+'ms');
 }
 
-// export default Sort;
+module.exports=Sort;

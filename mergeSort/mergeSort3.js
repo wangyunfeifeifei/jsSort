@@ -1,5 +1,5 @@
 //第二个优化方案,在js中好像反而更慢了
-//import Sort form '../sort'
+const Sort = require('../sort')
 
 function mergesort(){}
 
@@ -55,3 +55,5 @@ function __merge(arr,l,mid,r){
     }
 
 }
+
+module.exports = mergesort;

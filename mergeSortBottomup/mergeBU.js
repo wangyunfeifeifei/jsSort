@@ -1,5 +1,6 @@
-//自底向上归并排序
+const Sort = require('../sort');
 
+//自底向上归并排序
 function mergeBU() {}
 
 function F() {}
@@ -8,9 +9,9 @@ mergeBU.prototype = new F();
 
 mergeBU.prototype.sort = function(arr){
     for(let sz =1;sz<arr.length;sz+=sz){
-        for(let i=0;i+sz<n;i+=sz+sz){
+        for(let i=0;i+sz<arr.length;i+=sz+sz){
             // if(arr[i+sz-1]>arr[i+sz])
-                __merge(arr,i,i+sz-1,Math.min(i+sz+sz-1,n-1));
+                __merge(arr,i,i+sz-1,Math.min(i+sz+sz-1,arr.length-1));
         }
     }
 }
@@ -37,3 +38,5 @@ function __merge(arr,l,mid,r){
         }
     }
 }
+
+module.exports = mergeBU;

@@ -1,3 +1,5 @@
+const Sort = require('../sort')
+
 //归并排序第一次优化
 function mergesort(){
 
@@ -44,3 +46,5 @@ function __merge(arr,l,mid,r){
         }
     }
 }
+
+module.exports = mergesort;
