@@ -15,4 +15,5 @@
     + [自底向上归并排序](./mergeSortBottomup/mergeBU.js)
 + 快速排序
     + [基本快速排序](./quickSort/quicksort1.js)
+    + [优化方案一](./quickSort/quicksort2.js)
 + 堆排序(更新中)
