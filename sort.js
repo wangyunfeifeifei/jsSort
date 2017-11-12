@@ -18,9 +18,8 @@ Sort.prototype.less=function(a,b){
 
 //交换I和j位置上的元素
 Sort.prototype.exch = function(arr,i,j){
-    var t = arr[i];
-    arr[i]  = arr[j];
-    arr[j] = t;
+    //这里使用了es6的解构赋值，不懂请看es6
+    [arr[i],arr[j]] = [arr[j],arr[i]];
 }
 
 //判断是否已经排好序了

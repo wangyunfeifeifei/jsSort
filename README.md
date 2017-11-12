@@ -13,4 +13,6 @@
     + [优化方案2](./mergeSort/mergeSort3.js)
     + [最终优化](./mergeSort/mergeSort4.js)
     + [自底向上归并排序](./mergeSortBottomup/mergeBU.js)
-+ 快速排序(更新中)
++ 快速排序
+    + [基本快速排序](./quickSort/quicksort1.js)
++ 堆排序(更新中)

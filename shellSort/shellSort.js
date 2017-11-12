@@ -17,9 +17,13 @@ shellsort.prototype.sort = function(arr){
         //h》1时的操作是将数组变得近乎有序
         //近乎有序的数组插入排序的效率将会非常高
         for(let i = h;i<n;i++){
-            for(let j = i;j>=h&&arr[j]<arr[j-h];j-=h){
-                this.exch(arr,j,j-h);
+            let e = arr[i];
+            let index = i;
+            for(let j = i;j>=h&&arr[j-h]>e;j-=h){
+                arr[j] = arr[j-h];
+                index -= h;
             }
+            arr[index] = e;
         }
         h = Math.floor(h/3);
     }
