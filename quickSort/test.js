@@ -1,4 +1,4 @@
-const quicksort = require('./quicksort2');
+const quicksort = require('./quicksort3');
 
 let qs = new quicksort();
 let n = 1000000;
