@@ -17,4 +17,5 @@
     + [基本快速排序](./quickSort/quicksort1.js)
     + [优化方案一](./quickSort/quicksort2.js)
     + [双路快排](./quickSort/quicksort3.js)
+    + [三路快排](./quickSort/quicksort4.js)
 + 堆排序(更新中)
