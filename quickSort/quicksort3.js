@@ -25,8 +25,8 @@ function __patition(arr,l,r) {
     let j = r;
     let v = arr[l];
     while(true){
-        while(arr[i]<=v&&i<r)i++;
-        while(arr[j]>=v&&j>l)j--;
+        while(arr[i]<=v&&i<r)i++;//找到第一个比v大的数
+        while(arr[j]>=v&&j>l)j--;//找到第一个比v小的数
         if(i>=j)break;
         [arr[i],arr[j]] = [arr[j],arr[i]];
     }
