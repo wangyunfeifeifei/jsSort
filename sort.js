@@ -40,10 +40,9 @@ Sort.prototype.generateRandomArray=function(n,rangeL,rangeR){
 }
 
 Sort.prototype.speedTest=function(sortObject,arr){
-    var start = new Date().getTime();
+    console.time('clock');
     sortObject.sort(arr)
-    var end = new Date().getTime();
-    console.log("运行时间"+(end-start)+'ms');
+    console.timeEnd('clock');
 }
 
 module.exports=Sort;
