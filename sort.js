@@ -1,5 +1,4 @@
 function Sort(){
-
 }
 
 Sort.prototype.sort =  function(arr){
@@ -43,6 +42,10 @@ Sort.prototype.speedTest=function(sortObject,arr){
     console.time('clock');
     sortObject.sort(arr)
     console.timeEnd('clock');
+}
+
+Sort.prototype.copyArr = function(arr) {
+    return [...arr];
 }
 
 module.exports=Sort;
